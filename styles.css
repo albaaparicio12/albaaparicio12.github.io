@@ -4,9 +4,10 @@
 
 header {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     margin: 0 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Mogula', sans-serif;
+    font-size: 30px;
     background: #F8F0E5;
     color: #102C57;
 }
@@ -40,8 +41,8 @@ body {
     height: auto;
     text-align: center;
     border-radius: 10%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #DAC0A3;
+    font-family: 'Gajkley', sans-serif;
+    color: #F8F0E5;
 }
 
 .project img {
@@ -51,6 +52,11 @@ body {
     text-align: center;
     object-fit: scale-down;
     border-radius: 10px;
+}
+
+.imagen {
+    background-color: #F8F0E5;
+    border-radius: 20px;
 }
 
 .links {
@@ -64,4 +70,18 @@ body {
     margin: 0 auto;
     padding: 0px 4px;
     overflow: visible;
+}
+
+@font-face {
+    font-family: 'Mogula';
+    src: url('fonts/mogula.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gajkley';
+    src: url('fonts/Gajkley.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
