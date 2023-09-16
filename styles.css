@@ -4,12 +4,20 @@
 
 header {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin: 0 0;
     font-family: 'Mogula', sans-serif;
     font-size: 30px;
     background: #F8F0E5;
     color: #102C57;
+}
+
+.title {
+    transition: all .2s ease-in-out;
+}
+
+.title:hover {
+    transform: scale(1.1);
 }
 
 hr {
@@ -37,12 +45,16 @@ body {
     width: 100%;
     max-width: 350px;
     padding: 10px 15px;
-    margin-top: 20px;
+    margin: 50px 30px;
     height: auto;
     text-align: center;
     border-radius: 10%;
     font-family: 'Gajkley', sans-serif;
     color: #F8F0E5;
+}
+
+.project:hover {
+    background-color: #2f425f;
 }
 
 .project img {
