@@ -2,16 +2,6 @@
     box-sizing: border-box;
 }
 
-header {
-    text-align: center;
-    padding: 10px;
-    margin: 0 0;
-    font-family: 'Mogula', sans-serif;
-    font-size: 30px;
-    background: #F8F0E5;
-    color: #102C57;
-}
-
 .title {
     transition: all .2s ease-in-out;
 }
@@ -20,41 +10,117 @@ header {
     transform: scale(1.1);
 }
 
-hr {
-    color: #102C57;
-    margin: 0;
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 20%;
+    background-image: url("img/galaxia.jpeg");
+    box-shadow: -12px 0 10px 5px #000000;
+    height: 850px;
+    padding: 0;
+}
+
+.right {
+    width: 20%;
+    float: right;
+    background-image: url("img/planeta.jpg");
+    box-shadow: 12px 0 10px 5px #000000;
+    height: 850px;
+    padding: 0;
+}
+
+.middle {
+    width: 60%;
+    box-shadow: 0 0 30px 3px #000000;
+    border-radius: 15px;
+    position: relative;
+    font-family: "Comforta", "sans-serif";
+}
+
+.title {
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Varino", "sans-serif";
+    color: rgb(180, 180, 180);
+}
+
+.subtitle {
+    text-align: center;
+    color: #9b9b9b;
 }
 
 body {
-    background: #EADBC8;
+    background: linear-gradient(0deg, #303030, #0c0c0c);
     margin: 0;
+    color: #9b9b9b;
 }
 
-.projects {
+.options-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.option {
+    background-color: rgb(78, 78, 78);
+    margin-top: 50px;
+    padding: 25px 50px;
+    width: 150px;
+    text-align: center;
+    color: rgb(180, 180, 180);
+}
+
+.option:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+.option:active {
+    background-color: rgb(51, 51, 51);
+}
+
+.ideas {
+    border-radius: 0px;
+}
+
+.cv {
+    border-radius: 0 30px 30px 0;
+}
+
+.proyectos {
+    border-radius: 30px 0 0 30px;
+}
+
+.content-proyectos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
     margin: 0 auto;
-    background-color: #EADBC8;
 }
 
 .project {
-    background-color: #102C57;
+    background-color: rgb(78, 78, 78);
+    ;
     width: 100%;
     max-width: 350px;
-    padding: 10px 15px;
-    margin: 50px 30px;
+    padding: 10px 10px;
+    margin: 50px 20px;
     height: auto;
     text-align: center;
     border-radius: 10%;
-    font-family: 'Gajkley', sans-serif;
-    color: #F8F0E5;
 }
 
 .project:hover {
-    background-color: #2f425f;
+    background-color: rgb(87, 87, 87);
+}
+
+.project:active {
+    background-color: rgb(51, 51, 51);
 }
 
 .project img {
@@ -64,11 +130,6 @@ body {
     text-align: center;
     object-fit: scale-down;
     border-radius: 10px;
-}
-
-.imagen {
-    background-color: #F8F0E5;
-    border-radius: 20px;
 }
 
 .links {
@@ -85,8 +146,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Mogula';
-    src: url('fonts/mogula.otf') format('opentype');
+    font-family: 'Comforta';
+    src: url('fonts/Comfortaa-Light.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -94,6 +155,13 @@ body {
 @font-face {
     font-family: 'Gajkley';
     src: url('fonts/Gajkley.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Varino';
+    src: url('fonts/Varino.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
