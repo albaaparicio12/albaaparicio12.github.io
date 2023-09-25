@@ -2,14 +2,27 @@
     box-sizing: border-box;
 }
 
+/* Title: Alba Aparicio */
 .title {
     transition: all .2s ease-in-out;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-family: "Varino", "sans-serif";
+    color: rgb(180, 180, 180);
 }
 
 .title:hover {
     transform: scale(1.1);
 }
 
+.subtitle {
+    text-align: center;
+    color: #9b9b9b;
+    padding: 0 20px;
+}
+
+/* Main structure */
 .column {
     float: left;
     padding: 10px;
@@ -41,34 +54,22 @@
     overflow: visible;
 }
 
-.title {
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    font-family: "Varino", "sans-serif";
-    color: rgb(180, 180, 180);
-}
-
-.subtitle {
-    text-align: center;
-    color: #9b9b9b;
-}
-
 body {
     background: linear-gradient(0deg, #303030, #0c0c0c);
     margin: 0;
     color: #9b9b9b;
 }
 
+/* Navbar */
 .options-bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    padding: 0 20px;
 }
 
 .option {
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(51, 51, 51);
     margin-top: 60px;
     margin-bottom: 30px;
     width: 10rem;
@@ -81,24 +82,27 @@ body {
 }
 
 .option:hover {
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(70, 70, 70);
 }
 
-.option:active {
-    background-color: rgb(51, 51, 51);
-}
-
-.ideas {
+.btideas {
     border-radius: 0px;
 }
 
-.cv {
+.btcv {
     border-radius: 0 30px 30px 0;
 }
 
-.proyectos {
+.btproyectos {
     border-radius: 30px 0 0 30px;
 }
+
+
+.content {
+    padding: 20px;
+}
+
+/* Projects */
 
 .content-proyectos {
     display: flex;
@@ -138,6 +142,33 @@ body {
     border-radius: 10px;
 }
 
+/* Ideas */
+.idea {
+    margin-bottom: 60px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #9b9b9b;
+}
+
+.tag {
+    font-size: small;
+    background-color: rgb(87, 87, 87);
+    border-radius: 10px;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.tag:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+/* Social media links */
 .links {
     padding: 40px 0;
     text-align: center;
@@ -164,6 +195,8 @@ body {
     background: radial-gradient(rgb(62, 62, 62) 10%, transparent 80%);
 
 }
+
+/* Back button */
 
 .back {
     font-size: large;
