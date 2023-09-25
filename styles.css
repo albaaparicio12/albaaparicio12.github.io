@@ -168,6 +168,23 @@ hr {
     background-color: rgb(51, 51, 51);
 }
 
+/* CV */
+.cv {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cv-item {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+}
+
 /* Social media links */
 .links {
     padding: 40px 0;
