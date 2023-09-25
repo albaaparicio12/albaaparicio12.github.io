@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="template.js" type="text/javascript" defer></script>
 </head>
 <div class="container">
     <div class="column left"></div>
@@ -15,34 +16,17 @@
         </div>
         <div class="subtitle">
             <h2>Software Engineer</h2>
-            <p> Innovative Programmer striving to make the world a more unified and connected place.</p>
+            <p> Innovative programmer striving to make the world a more unified and connected place.</p>
             <p> A creative thinker, adept in software development and quantum computing enthusiast. </p>
         </div>
         <div class="options-bar">
-            <div class="option proyectos">Projects</div>
-            <div class="option ideas">Ideas</div>
-            <div class="option cv">CV</div>
+            <div class="option proyectos" onClick="location.href='projects.html'">Projects</div>
+            <div class="option ideas" onClick="location.href='ideas.html'">Ideas</div>
+            <div class="option cv" onClick="location.href='cv.html'">CV</div>
         </div>
         <div class="content">
-            <div class="content-proyectos">
-                <div class="project" onclick="window.open('https://i-dentus.com/');" style="cursor: pointer;">
-                    <h1>iDentus</h1>
-                    <div class="imagen"><img src="img/identus.png"></div>
-                    <p>Web app for dental students</p>
-                </div>
-                <div class="project" onclick="window.open('https://github.com/albaaparicio12/TFG-App');"
-                    style="cursor: pointer;">
-                    <h1>Quantum machine learning</h1>
-                    <div class="imagen"><img src="img/qubit.png"></div>
-                    <p>Demo to demonstrate the performance of some quantum machine learning algorithms</p>
-                </div>
-            </div>
         </div>
-        <div class="links">
-            <a href="https://github.com/albaaparicio12"><img src="img/github.png" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/alba-aparicio-perez/"><img src="img/linkedin.png" alt="Linkedin"></a>
-            <a href="https://www.instagram.com/albaaparicio12/"><img src="img/instagram.png" alt="Instagram"></a>
-        </div>
+        <links-component></links-component>
     </div>
     <div class="column right"></div>
 

@@ -16,33 +16,35 @@
 }
 
 .left {
-    width: 20%;
+    width: 10%;
     background-image: url("img/galaxia.jpeg");
-    box-shadow: -12px 0 10px 5px #000000;
+    box-shadow: -8px 0 10px 5px #000000;
     height: 850px;
     padding: 0;
 }
 
 .right {
-    width: 20%;
+    width: 10%;
     float: right;
     background-image: url("img/planeta.jpg");
-    box-shadow: 12px 0 10px 5px #000000;
+    box-shadow: 8px 0 10px 5px #000000;
     height: 850px;
     padding: 0;
 }
 
 .middle {
-    width: 60%;
+    width: 80%;
     box-shadow: 0 0 30px 3px #000000;
     border-radius: 15px;
     position: relative;
     font-family: "Comforta", "sans-serif";
+    overflow: visible;
 }
 
 .title {
     text-align: center;
     margin-top: 80px;
+    margin-bottom: 60px;
     font-family: "Varino", "sans-serif";
     color: rgb(180, 180, 180);
 }
@@ -67,11 +69,15 @@ body {
 
 .option {
     background-color: rgb(78, 78, 78);
-    margin-top: 50px;
-    padding: 25px 50px;
-    width: 150px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 10rem;
+    height: 5rem;
+    display: inline-grid;
     text-align: center;
+    align-items: center;
     color: rgb(180, 180, 180);
+    cursor: pointer;
 }
 
 .option:hover {
@@ -99,20 +105,20 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
     margin: 0 auto;
 }
 
 .project {
     background-color: rgb(78, 78, 78);
-    ;
     width: 100%;
     max-width: 350px;
     padding: 10px 10px;
-    margin: 50px 20px;
+    margin: 30px 20px;
     height: auto;
     text-align: center;
     border-radius: 10%;
+    position: relative;
+    cursor: pointer;
 }
 
 .project:hover {
@@ -143,6 +149,37 @@ body {
     margin: 0 auto;
     padding: 0px 4px;
     overflow: visible;
+}
+
+.social {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 2%;
+    object-fit: contain;
+}
+
+.social:hover {
+    background: radial-gradient(rgb(62, 62, 62) 10%, transparent 80%);
+
+}
+
+.back {
+    font-size: large;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    color: #9b9b9b;
+    width: fit-content;
+}
+
+.back:hover {
+    color: #625c85;
+}
+
+.back:active {
+    color: #646464;
 }
 
 @font-face {
